@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Boxproduct.css";
 import { Link } from "react-router-dom";
-import second from "../../../public/images/37236d43-a6f6-4a07-89eb-04dee62197e3.jpg";
+
 export default function Boxproduct({
   title,
   price,
@@ -55,7 +55,7 @@ export default function Boxproduct({
           </svg>
         </div>
         <div className="flex-none w-[136px] h-[136px] card__placeholder">
-          <img className="w-full h-full object-cover" src={second} />
+          <img className="w-full h-full object-cover" src={img} />
         </div>
       </div>
     </Link>
