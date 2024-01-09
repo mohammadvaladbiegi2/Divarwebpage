@@ -1,0 +1,1 @@
+.hiddenScrollbar::-webkit-scrollbar{display:none}.card__placeholder{animation:image-loading 1s linear infinite alternate}@keyframes image-loading{0%{background-color:#c2cfd6}to{background-color:#f0f3f5}}
