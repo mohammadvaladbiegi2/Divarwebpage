@@ -1,0 +1,31 @@
+@import url(./reset.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: IRANSansWeb_Medium;
+  src: url(../style/Fonts/IRANSansWeb_Medium.9f338149.woff2);
+}
+
+@font-face {
+  font-family: IRANSansWeb;
+  src: url(../style/Fonts/IRANSansWeb.cdb118d6.woff2);
+}
+
+@font-face {
+  font-family: sonnat;
+  src: url(../style/Fonts/sonnat-icons.e88ad80d.woff2);
+}
+
+.IRANSansWeb_Medium {
+  font-family: IRANSansWeb_Medium;
+}
+
+.IRANSansWeb {
+  font-family: IRANSansWeb;
+}
+
+.sonnat {
+  font-family: sonnat;
+}

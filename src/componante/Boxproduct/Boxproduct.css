@@ -1,0 +1,13 @@
+.card__placeholder {
+  animation: image-loading 1s linear infinite alternate;
+}
+
+@keyframes image-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}

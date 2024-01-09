@@ -1,0 +1,29 @@
+.container-form-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  direction: rtl;
+  background-color: #be3737ed;
+}
+
+.bg {
+  background-image: url("../../../public/images/divar-11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-form {
+  border: 1px solid rgb(131, 131, 131);
+  background-color: #fff;
+}
+
+input {
+  outline: none;
+  font-family: IRANSansWeb_Medium;
+}
+
+.textAreaScrollBar::-webkit-scrollbar{
+  display: none;
+}

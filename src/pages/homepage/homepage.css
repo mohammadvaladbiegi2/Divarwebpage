@@ -1,0 +1,3 @@
+.hiddenScrollbar::-webkit-scrollbar {
+  display: none;
+}
