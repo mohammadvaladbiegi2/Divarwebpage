@@ -3,9 +3,9 @@ import "./imageLoader.css";
 
 export default function imageLoader() {
   return (
-    <div class="spinner">
+    <div className="spinner">
       <h3>
-        <span class="visually-hidden">visuallyhidden</span>
+        <span className="visually-hidden">visuallyhidden</span>
       </h3>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./productpage.css";
 import { Link, useParams } from "react-router-dom";
-import logo from "/images/logo.svg"
+import logo from "/images/logo.svg";
 
 import data from "../../data.json";
 export default function productpage() {
@@ -80,8 +80,22 @@ export default function productpage() {
         </div>
       </header>
 
-      <section className="flex max-lg:flex-col max-lg:items-center justify-center gap-5 lg:gap-[84px] px-4 py-[150px]" dir="rtl">
-        <div className="sm:w-[420px] h-screen px-2">
+      <section className="flex max-lg:flex-col max-lg:items-center justify-center gap-5 lg:gap-[84px] px-4 py-[150px]">
+        <div className="sm:w-[504px] px-2">
+          <img className="w-full object-fill" src={mainproduct[0]?.img} />
+          <div className="hidden lg:block">
+            <textarea
+              dir="rtl"
+              className="mt-4  resize-none border border-[rgba(0,0,0,.24)] py-2 px-4 rounded w-full h-[120px] outline-none IRANSansWeb"
+              placeholder="یادداشت شما..."
+            ></textarea>
+            <span className="mt-1 text-end block IRANSansWeb text-xs text-[#0000008F]">
+              یادداشت تنها برای شما قابل دیدن است و پس از حذف آگهی، پاک خواهد
+              شد.
+            </span>
+          </div>
+        </div>
+        <div className="sm:w-[420px] h-screen px-2" dir="rtl">
           <div className="IRANSansWeb_Medium text-2xl leading-[1.5]">
             {mainproduct[0]?.title}
           </div>
@@ -129,8 +143,9 @@ export default function productpage() {
             <div className="IRANSansWeb flex gap-2 text-base">
               <button
                 onClick={() => setshowphoneNumber((prev) => !prev)}
-                className={`text-white ${!showphoneNumber ? "bg-[#A62626]" : "bg-[#be5c5c]"
-                  } hover:bg-opacity-90 transition-all duration-300 h-10 px-2 whitespace-nowrap sm:px-4 rounded flex items-center cursor-pointer`}
+                className={`text-white ${
+                  !showphoneNumber ? "bg-[#A62626]" : "bg-[#be5c5c]"
+                } hover:bg-opacity-90 transition-all duration-300 h-10 px-2 whitespace-nowrap sm:px-4 rounded flex items-center cursor-pointer`}
               >
                 اطلاعات تماس
               </button>
@@ -236,16 +251,6 @@ export default function productpage() {
           <p className="leading-[2] IRANSansWeb whitespace-pre-line break-words mt-2">
             {mainproduct[0]?.description}
           </p>
-        </div>
-        <div className="sm:w-[504px] px-2">
-          <img className="w-full object-fill" src={mainproduct[0]?.img} />
-          <textarea
-            className="mt-4 resize-none border border-[rgba(0,0,0,.24)] py-2 px-4 rounded w-full h-[120px] outline-none IRANSansWeb"
-            placeholder="یادداشت شما..."
-          ></textarea>
-          <span className="mt-1 IRANSansWeb text-xs text-[#0000008F]">
-            یادداشت تنها برای شما قابل دیدن است و پس از حذف آگهی، پاک خواهد شد.
-          </span>
         </div>
       </section>
     </>
