@@ -23,9 +23,12 @@ export default function Boxproduct({
         }}
       >
         <div className="w-[140px] lg:w-[172px]">
-          <div className="IRANSansWeb_Medium text-base leading-7 mb-2 h-14 overflow-hidden">
+          <Link
+            to={`/Divarwebpage/product/${shortname}`}
+            className="IRANSansWeb_Medium text-base leading-7 mb-2 h-14 overflow-hidden"
+          >
             {title}
-          </div>
+          </Link>
           <div className="IRANSansWeb flex flex-col text-[#0000008f]">
             <span className="text-sm leading-6 h-6 truncate">{condition}</span>
             <span className="text-sm leading-6 h-6 truncate">
