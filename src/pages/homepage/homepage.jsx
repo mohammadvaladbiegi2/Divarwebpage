@@ -30,7 +30,7 @@ export default function homepage() {
       (product) => product.category === stuts
     );
 
-    if (stuts === "-1" || stuts.length === 0) {
+    if (stuts === "-1" || stuts.length === 0 || stuts === "all") {
       setshowproduct(allproduct);
     } else {
       setshowproduct(categoryfilter);
