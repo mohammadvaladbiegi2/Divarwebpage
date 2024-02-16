@@ -17,12 +17,12 @@ export default function Boxproduct({
       className="h-[168px] cursor-pointer"
     >
       <div
-        className="flex w-[364px] rounded h-full p-4"
+        className="flex w-[320px] lg:w-[364px] rounded h-full p-4"
         style={{
           boxShadow: "inset 0 0 0 1px rgba(0,0,0,.08), inset 0 0 0 1px #fff",
         }}
       >
-        <div className="w-[172px]">
+        <div className="w-[140px] lg:w-[172px]">
           <div className="IRANSansWeb_Medium text-base leading-7 mb-2 h-14 overflow-hidden">
             {title}
           </div>

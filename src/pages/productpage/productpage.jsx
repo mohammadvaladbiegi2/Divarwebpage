@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./productpage.css";
 import { Link, useParams } from "react-router-dom";
+import logo from "/images/logo.svg"
 
 import data from "../../data.json";
 export default function productpage() {
@@ -24,14 +25,14 @@ export default function productpage() {
           dir="rtl"
         >
           <div className="flex justify-between items-center w-full h-12 relative">
-            <Link to="/" className="w-full flex items-center">
+            <Link to="/" className="w-fit flex items-center">
               <figure className="flex-none w-12 h-12 cursor-pointer me-2">
-                <img className="w-full" src="/images/logo.svg" alt="" />
+                <img className="w-full" src={logo} alt="" />
               </figure>
-              <div className="w-[1.5px] h-6 mx-2 bg-[rgba(0,0,0,.12)]"></div>
             </Link>
+            <div className="hidden w-[1.5px] h-6 mx-2 bg-[rgba(0,0,0,.12)]"></div>
             <div className="flex-none flex items-center">
-              <div className="flex-none flex gap-2 h-10 rounded px-4 hover:bg-[#0000000A] transition-all duration-300 items-center IRANSansWeb_Medium text-xs text-[rgba(0,0,0,.56)] hover:text-black cursor-pointer">
+              <div className="max-lg:hidden flex-none flex gap-2 h-10 rounded px-4 hover:bg-[#0000000A] transition-all duration-300 items-center IRANSansWeb_Medium text-xs text-[rgba(0,0,0,.56)] hover:text-black cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -48,7 +49,7 @@ export default function productpage() {
                 </svg>
                 <span>دیوار من</span>
               </div>
-              <div className="flex-none flex gap-2 h-10 rounded px-4 ms-2 hover:bg-[#0000000A] transition-all duration-300 items-center IRANSansWeb_Medium text-xs text-[rgba(0,0,0,.56)] hover:text-black cursor-pointer">
+              <div className="max-lg:hidden flex-none flex gap-2 h-10 rounded px-4 ms-2 hover:bg-[#0000000A] transition-all duration-300 items-center IRANSansWeb_Medium text-xs text-[rgba(0,0,0,.56)] hover:text-black cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -65,7 +66,7 @@ export default function productpage() {
                 </svg>
                 <span>چت</span>
               </div>
-              <div className="flex-none flex h-10 rounded px-4 ms-2 hover:bg-[#0000000A] transition-all duration-300 items-center IRANSansWeb_Medium text-xs text-[rgba(0,0,0,.56)] hover:text-black cursor-pointer">
+              <div className="max-lg:hidden flex-none flex h-10 rounded px-4 ms-2 hover:bg-[#0000000A] transition-all duration-300 items-center IRANSansWeb_Medium text-xs text-[rgba(0,0,0,.56)] hover:text-black cursor-pointer">
                 پشتیبانی
               </div>
               <Link
@@ -79,8 +80,8 @@ export default function productpage() {
         </div>
       </header>
 
-      <section className="flex justify-center gap-[84px] pt-[150px]" dir="rtl">
-        <div className="w-[420px] h-screen px-2">
+      <section className="flex max-lg:flex-col max-lg:items-center justify-center gap-5 lg:gap-[84px] px-4 py-[150px]" dir="rtl">
+        <div className="sm:w-[420px] h-screen px-2">
           <div className="IRANSansWeb_Medium text-2xl leading-[1.5]">
             {mainproduct[0]?.title}
           </div>
@@ -128,14 +129,13 @@ export default function productpage() {
             <div className="IRANSansWeb flex gap-2 text-base">
               <button
                 onClick={() => setshowphoneNumber((prev) => !prev)}
-                className={`text-white ${
-                  !showphoneNumber ? "bg-[#A62626]" : "bg-[#be5c5c]"
-                } hover:bg-opacity-90 transition-all duration-300 h-10 px-4 rounded flex items-center cursor-pointer`}
+                className={`text-white ${!showphoneNumber ? "bg-[#A62626]" : "bg-[#be5c5c]"
+                  } hover:bg-opacity-90 transition-all duration-300 h-10 px-2 whitespace-nowrap sm:px-4 rounded flex items-center cursor-pointer`}
               >
                 اطلاعات تماس
               </button>
               <button
-                className="h-10 px-4 flex justify-center rounded text-[#0000008F] items-center w-[125px] cursor-pointer hover:bg-[rgba(0,0,0,.04)] hover:text-black transition-all duration-300"
+                className="h-10 px-4 max-sm:px-8 flex justify-center rounded text-[#0000008F] items-center sm:w-[125px] cursor-pointer hover:bg-[rgba(0,0,0,.04)] hover:text-black transition-all duration-300"
                 style={{ border: "1px solid rgba(0,0,0,.48)" }}
               >
                 چت
@@ -237,8 +237,8 @@ export default function productpage() {
             {mainproduct[0]?.description}
           </p>
         </div>
-        <div className="w-[504px] px-2">
-          <img className="w-full   object-fill" src={mainproduct[0]?.img} />
+        <div className="sm:w-[504px] px-2">
+          <img className="w-full object-fill" src={mainproduct[0]?.img} />
           <textarea
             className="mt-4 resize-none border border-[rgba(0,0,0,.24)] py-2 px-4 rounded w-full h-[120px] outline-none IRANSansWeb"
             placeholder="یادداشت شما..."
