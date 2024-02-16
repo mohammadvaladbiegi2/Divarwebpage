@@ -37,9 +37,9 @@ export default function Newproduct() {
   });
 
   return (
-    <div className="container-form-b">
+    <div className="sm:flex justify-center items-center bg-[#be3737ed]" dir="rtl">
       <form onSubmit={form.handleSubmit}>
-        <div className="flex flex-col gap-7 justify-center p-6 container-form w-[500px] m-8 rounded-2xl shadow-headerShadow">
+        <div className="flex flex-col gap-7 justify-center p-6 container-form w-full sm:w-[500px] max-sm:py-8 sm:my-8 lg:m-8 sm:rounded-2xl shadow-headerShadow">
           <h1 className="text-center IRANSansWeb_Medium mt-4 text-lg">
             اضافه کردن محصول جدید
           </h1>
