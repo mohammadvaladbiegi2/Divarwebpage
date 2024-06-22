@@ -172,7 +172,7 @@ export default function homepage() {
         <div className="flex max-w-[1440px]">
           {" "}
           {/* max-w */}
-          <div className="fixed top-16 w-[280px] h-screen overflow-y-auto hiddenScrollbar pt-8 px-4">
+          <div className="fixed top-16 w-[280px] h-screen overflow-y-auto hiddenScrollbar pt-8 px-4 max-lg:hidden">
             <div className="max-lg:hidden">
               <div>
                 <div>
