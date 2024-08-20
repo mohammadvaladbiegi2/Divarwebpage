@@ -169,7 +169,7 @@ export default function homepage() {
         </div>
       </header>
       <section className="pt-16 flex  mx-auto" dir="rtl">
-        <div className="flex max-w-[1440px]">
+        <div className="flex max-w-[1440px] m-auto">
           {" "}
           {/* max-w */}
           <div className="fixed top-16 w-[280px] h-screen overflow-y-auto hiddenScrollbar pt-8 px-4 max-lg:hidden">
