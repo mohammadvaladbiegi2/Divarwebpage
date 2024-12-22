@@ -25,7 +25,7 @@ export default function productpage() {
           dir="rtl"
         >
           <div className="flex justify-between items-center w-full h-12 relative">
-            <Link to="/" className="w-fit flex items-center">
+            <Link to="/Divarwebpage" className="w-fit flex items-center">
               <figure className="flex-none w-12 h-12 cursor-pointer me-2">
                 <img className="w-full" src={logo} alt="" />
               </figure>
